@@ -1,0 +1,15 @@
+{
+  "name": "servigraph",
+  "version": "1.0.0",
+  "description": "A graph of your infrastructure.",
+  "main": "index.js",
+  "repository": "https://github.com/maclover7/servigraph",
+  "author": "Jon Moss <me@jonathanmoss.me>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
