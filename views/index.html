@@ -1,0 +1,37 @@
+<html>
+<head>
+  <style type="text/css">
+    #container {
+      max-width: 400px;
+      height: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/sigma.min.js"></script>
+
+  <script>
+    var graph = {
+      nodes: [
+        { id: 'node0', label: 'a', x: Math.random(), y: Math.random(), size: 1, color: '#666' },
+        { id: 'node1', label: 'b', x: Math.random(), y: Math.random(), size: 1, color: '#666' },
+        { id: 'node2', label: 'c', x: Math.random(), y: Math.random(), size: 1, color: '#666' }
+      ],
+
+      edges: [
+        { id: 'edge0', source: 'node1', target: 'node0' },
+        { id: 'edge1', source: 'node2', target: 'node0' }
+      ]
+    };
+
+    new sigma({
+      graph: graph,
+      container: 'container'
+    });
+  </script>
+</body>
+</html>
